@@ -16,6 +16,7 @@ class AlbumsController < ApplicationController
   def create
     @album = Album.new(album_params)
     if @album.save
+      flash[:notice] = "Album successfully added!"
       redirect_to albums_path
     else
       render :new
@@ -50,6 +51,7 @@ class AlbumsController < ApplicationController
     @album.destroy
     redirect_to albums_path
   end
+  
 
   private
     def album_params

@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+ RUBYGEMS_GEMDEPS remove bundle lock
